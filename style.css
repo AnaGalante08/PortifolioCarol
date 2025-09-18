@@ -1,0 +1,10 @@
+body{
+ background-color: rgb(160, 100, 216);
+ width: 100%;
+ padding: 0;
+}
+header{
+    background-color: aliceblue;
+    width: 1440;
+    height: 70;
+}
