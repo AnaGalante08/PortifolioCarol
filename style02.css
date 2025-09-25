@@ -33,5 +33,62 @@ header {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 25px;
+    font-size: 20px;
 }
+section{
+
+}
+h1{
+     display: flex;
+    
+    font-size: 45px;
+    font-weight: 400;
+    background: linear-gradient(90deg, #D566ED 10.1%, #999090 34.13%, #BC5FDE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+section{
+    font-family: Baskervville;
+    font-size: 55px;
+    display: flex;
+padding: 200px;
+margin-left: 50px;
+}
+.card{
+padding-left: 30px;
+font-size: 15px;
+border-radius: 50px;
+    background-color: #FFF;
+    width: 1090px;
+    height: 420px;
+    padding: 200px;
+    margin-left: 200px;
+    display: flex;
+     margin-top: 150px; 
+     justify-content: center;
+     align-items: center
+  flex-direction: column; /* Alinha os itens em coluna */
+  padding: 20px; /* Adiciona um espaço interno para não grudar nas bordas */
+  
+     
+}
+.lista{
+
+    list-style-type:circle ;
+    display: flex;
+    justify-content: center;
+    margin-right: 500px;
+    flex-direction: column;
+    font-size: 30px;
+    margin-right: 120px;
+    color: #C256E1;
+    font-size: 35px;
+    
+    
+}
+
+
+
+
+      
