@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+opacity: 0.95;
+    background: linear-gradient(180deg, #C256E1 0%, rgba(194, 86, 225, 0.87) 4.69%, #FFF 98.05%);
+    height: 100vh;
+    padding: 0;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    padding: 20px 100px;
+}
+.lis {
+
+    display: flex;
+
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    justify-content: right;
+    gap: 30px;
+    list-style-type: none;
+    background: linear-gradient(90deg, #D566ED 10.1%, #999090 34.13%, #BC5FDE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+}
+section{
+
+}
+h1{
+     display: flex;
+    
+    font-size: 45px;
+    font-weight: 400;
+    background: linear-gradient(90deg, #D566ED 10.1%, #999090 34.13%, #BC5FDE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+section{
+    font-family: Baskervville;
+    font-size: 55px;
+    display: flex;
+padding: 200px;
+margin-left: 50px;
+}
+.card{
+padding-left: 30px;
+font-size: 15px;
+border-radius: 50px;
+    background-color: #FFF;
+    width: 1090px;
+    height: 420px;
+    padding: 200px;
+    margin-left: 200px;
+    display: flex;
+     margin-top: 150px; 
+     justify-content: center;
+     align-items: center
+  flex-direction: column; /* Alinha os itens em coluna */
+  padding: 20px; /* Adiciona um espaço interno para não grudar nas bordas */
+  
+     
+}
+.inputs{
+    font-size: 20px;
+    flex-direction: column;
+
+}
+img {
+  float: right;
+  width: 320px;
+  height: ;
+
+}
+p{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.conteudo-contato {
+  display: flex; /* Ativa o Flexbox */
+  flex-direction: column; /* Organiza os itens em uma coluna (um abaixo do outro) */
+  justify-content: center; /* Centraliza verticalmente (ao longo do eixo principal) */
+  align-items: center; /* Centraliza horizontalmente (ao longo do eixo cruzado) */
+  
+  /* Você provavelmente precisará garantir que .conteudo-contato ocupe */
+  /* toda a altura e largura do .container-branco para que o alinhamento funcione */
+  width: 100%;
+  height: 100%; 
+  /* (ou uma altura definida para o .container-branco e .conteudo-contato) */
+  gap: 35px;
+
+}
+.container-branco{
+padding-left: 30px;
+font-size: 15px;
+border-radius: 50px;
+    background-color: #FFF;
+    width: 1090px;
+    height: 420px;
+    padding: 200px;
+    margin-left: 200px;
+    display: flex;
+     margin-top: 150px; 
+     justify-content: center;
+     align-items: center
+  flex-direction: column; /* Alinha os itens em coluna */
+  padding: 20px; /* Adiciona um espaço interno para não grudar nas bordas */
+
+}
+.inputs{
+  
+    
+}
+    
+
+.email{
+     flex-direction: column; /* Inputs um embaixo do outro */
+    gap: 15px; /* Espaço entre os inputs (15 pixels) */
+    margin-top: 20px; /* Espaço entre a frase e os inputs */
+    width: 100%; /* Ocupa a largura total disponível na coluna */
+    max-width: 400px; /* Define uma largura máxima para os inputs */
+    align-items: center; /* Centraliza os inputs dentro do .input-group */
+ border: 5px solid #f58ef5 ; /* Borda sutil na cor lilás claro */
+ height: 60px;
+ border-radius: 3px;
+}
+.telefone{
+     flex-direction: column; /* Inputs um embaixo do outro */
+    gap: 15px; /* Espaço entre os inputs (15 pixels) */
+    margin-top: 20px; /* Espaço entre a frase e os inputs */
+    width: 100%; /* Ocupa a largura total disponível na coluna */
+    max-width: 400px; /* Define uma largura máxima para os inputs */
+    align-items: center; /* Centraliza os inputs dentro do .input-group */
+ border: 5px solid #f58ef5 ; /* Borda sutil na cor lilás claro */
+ height: 60px;
+ border-radius: 3px;
+}
+.mensagem{
+   flex-direction: column; /* Inputs um embaixo do outro */
+    gap: 15px; /* Espaço entre os inputs (15 pixels) */
+    margin-top: 20px; /* Espaço entre a frase e os inputs */
+    width: 100%; /* Ocupa a largura total disponível na coluna */
+    max-width: 700px; /* Define uma largura máxima para os inputs */
+    align-items: center; /* Centraliza os inputs dentro do .input-group */
+ border: 5px solid #f58ef5 ; /* Borda sutil na cor lilás claro */
+ border-radius: 3px;
+
+    min-height: 60px;
+}
+button{
+    width: 145px;
+    /* Adiciona padding interno para altura */
+    padding: 10px 20px;
+    /* Cor de fundo com o tom de roxo/lilás do seu design */
+    background-color: #dc71dc; /* Roxo mais vibrante */
+    /* Cor do texto do botão */
+}
+
