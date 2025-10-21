@@ -143,7 +143,7 @@ border-radius: 50px;
 }
 .telefone{
      flex-direction: column; /* Inputs um embaixo do outro */
-    gap: 15px; /* Espaço entre os inputs (15 pixels) */
+    gap: 15px; /* Espaço entre os inputs*/
     margin-top: 20px; /* Espaço entre a frase e os inputs */
     width: 100%; /* Ocupa a largura total disponível na coluna */
     max-width: 400px; /* Define uma largura máxima para os inputs */
@@ -159,9 +159,8 @@ border-radius: 50px;
     width: 100%; /* Ocupa a largura total disponível na coluna */
     max-width: 700px; /* Define uma largura máxima para os inputs */
     align-items: center; /* Centraliza os inputs dentro do .input-group */
- border: 5px solid #f58ef5 ; /* Borda sutil na cor lilás claro */
- border-radius: 3px;
-
+    border: 5px solid #f58ef5 ; 
+    border-radius: 3px;
     min-height: 60px;
 }
 button{
@@ -171,5 +170,11 @@ button{
     /* Cor de fundo com o tom de roxo/lilás do seu design */
     background-color: #dc71dc; /* Roxo mais vibrante */
     /* Cor do texto do botão */
+    
+}
+.enviar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
