@@ -179,3 +179,20 @@ p {
         padding: 10px;
     }
 }
+.instagram {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre a logo e o texto */
+  margin-top: 20px; /* Espaço acima, opcional */
+}
+
+.insta-logo {
+  width: 24px;  /* Ajuste o tamanho do ícone */
+  height: 24px;
+  object-fit: contain;
+}
+
+.insta {
+  font-size: 18px; /* Tamanho da fonte pequeno e proporcional */
+  color: #050405;
+}
