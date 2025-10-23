@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,16 +8,17 @@ body {
     opacity: 0.95;
     background: linear-gradient(180deg, #C256E1 0%, rgba(194, 86, 225, 0.87) 4.69%, #FFF 98.05%);
     height: 100vh;
-    padding: 0;
     margin: 0 auto;
+    font-family: "Inknut Antiqua", serif;
 }
 
+/* ===== HEADER ===== */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     width: 100%;
     height: 100px;
     padding: 20px 100px;
@@ -29,24 +30,14 @@ header .logo {
 }
 
 header .logo img {
-    height: 100px;
+    height: 80px;
+    width: auto;
 }
 
-.Conteudo-principal {
-    width: 293px;
-    height: 287px;
-    flex-shrink: 0;
-    border-radius: 293px;
-    border: 0 solid #5516A4;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
-}
-
+/* ===== NAVEGAÇÃO ===== */
 .lis {
-
     display: flex;
-
     align-items: center;
-    /* Alinha os itens verticalmente ao centro */
     justify-content: right;
     gap: 30px;
     list-style-type: none;
@@ -57,29 +48,26 @@ header .logo img {
     font-size: 25px;
 }
 
+/* ===== CONTEÚDO ===== */
 h1 {
-    display: flex;
-    font-family: Baskervville;
+    font-family: Baskervville, serif;
     font-size: 45px;
     font-weight: 400;
     background: linear-gradient(90deg, #D566ED 10.1%, #999090 34.13%, #BC5FDE 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
-
-
-.foto {
-    width: 30%;
+.Conteudo-principal {
+    width: 293px;
+    height: 287px;
+    border-radius: 293px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 
 p {
-
-    color: #FFF;
-    font-family: "Inknut Antiqua";
+    color: #1d1c1c;
     font-size: 24px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     width: 40%;
@@ -92,4 +80,102 @@ p {
     align-items: center;
 }
 
+.foto {
+    width: 30%;
+}
 
+/* ==================== */
+/* 📱 RESPONSIVIDADE */
+/* ==================== */
+
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    .lis {
+        gap: 20px;
+        font-size: 20px;
+    }
+
+    .tema {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    p {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .foto {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    header .logo img {
+        height: 60px;
+    }
+
+    .lis {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .tema {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .foto {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .Conteudo-principal {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .lis {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .foto {
+        width: 100%;
+    }
+
+    header {
+        padding: 10px;
+    }
+}

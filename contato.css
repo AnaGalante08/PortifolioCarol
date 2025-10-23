@@ -1,180 +1,236 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-opacity: 0.95;
-    background: linear-gradient(180deg, #C256E1 0%, rgba(194, 86, 225, 0.87) 4.69%, #FFF 98.05%);
-    height: 100vh;
-    padding: 0;
-    margin: 0 auto;
+
+body {
+  opacity: 0.95;
+  background: linear-gradient(
+    180deg,
+    #c256e1 0%,
+    rgba(194, 86, 225, 0.87) 4.69%,
+    #fff 98.05%
+  );
+  min-height: 100vh;
+  margin: 0 auto;
+  font-family: "Baskervville", serif;
 }
+
+/* ===== HEADER ===== */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 100px;
-    padding: 20px 100px;
-}
-.lis {
-
-    display: flex;
-
-    align-items: center;
-    /* Alinha os itens verticalmente ao centro */
-    justify-content: right;
-    gap: 30px;
-    list-style-type: none;
-    background: linear-gradient(90deg, #D566ED 10.1%, #999090 34.13%, #BC5FDE 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 20px;
-}
-section{
-
-}
-h1{
-     display: flex;
-    
-    font-size: 45px;
-    font-weight: 400;
-    background: linear-gradient(90deg, #D566ED 10.1%, #999090 34.13%, #BC5FDE 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
-section{
-    font-family: Baskervville;
-    font-size: 55px;
-    display: flex;
-padding: 200px;
-margin-left: 50px;
-}
-.card{
-padding-left: 30px;
-font-size: 15px;
-border-radius: 50px;
-    background-color: #FFF;
-    width: 1090px;
-    height: 420px;
-    padding: 200px;
-    margin-left: 200px;
-    display: flex;
-     margin-top: 150px; 
-     justify-content: center;
-     align-items: center
-  flex-direction: column; /* Alinha os itens em coluna */
-  padding: 20px; /* Adiciona um espaço interno para não grudar nas bordas */
-  
-     
-}
-.inputs{
-    font-size: 20px;
-    flex-direction: column;
-
-}
-img {
-  float: right;
-  width: 320px;
-  height: ;
-
-}
-p{
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-.conteudo-contato {
-  display: flex; /* Ativa o Flexbox */
-  flex-direction: column; /* Organiza os itens em uma coluna (um abaixo do outro) */
-  justify-content: center; /* Centraliza verticalmente (ao longo do eixo principal) */
-  align-items: center; /* Centraliza horizontalmente (ao longo do eixo cruzado) */
-  
-  /* Você provavelmente precisará garantir que .conteudo-contato ocupe */
-  /* toda a altura e largura do .container-branco para que o alinhamento funcione */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
   width: 100%;
-  height: 100%; 
-  /* (ou uma altura definida para o .container-branco e .conteudo-contato) */
-  gap: 35px;
+  height: 100px;
+  padding: 20px 80px;
+}
 
+.lis {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  list-style-type: none;
+  background: linear-gradient(90deg, #d566ed 10.1%, #999090 34.13%, #bc5fde 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
 }
-.container-branco{
-padding-left: 30px;
-font-size: 15px;
-border-radius: 50px;
-    background-color: #FFF;
-    width: 1090px;
-    height: 420px;
-    padding: 200px;
-    margin-left: 200px;
-    display: flex;
-     margin-top: 150px; 
-     justify-content: center;
-     align-items: center
-  flex-direction: column; /* Alinha os itens em coluna */
-  padding: 20px; /* Adiciona um espaço interno para não grudar nas bordas */
 
+/* ===== CONTEÚDO PRINCIPAL ===== */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 150px 50px;
+  text-align: center;
 }
-.inputs{
-  
-    
-}
-    
 
-.email{
-     flex-direction: column; /* Inputs um embaixo do outro */
-    gap: 15px; /* Espaço entre os inputs (15 pixels) */
-    margin-top: 20px; /* Espaço entre a frase e os inputs */
-    width: 100%; /* Ocupa a largura total disponível na coluna */
-    max-width: 400px; /* Define uma largura máxima para os inputs */
-    align-items: center; /* Centraliza os inputs dentro do .input-group */
- border: 5px solid #f58ef5 ; /* Borda sutil na cor lilás claro */
- height: 60px;
- border-radius: 3px;
+h1 {
+  font-size: 45px;
+  font-weight: 400;
+  background: linear-gradient(90deg, #d566ed 10.1%, #999090 34.13%, #bc5fde 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }
-.telefone{
-     flex-direction: column; /* Inputs um embaixo do outro */
-    gap: 15px; /* Espaço entre os inputs*/
-    margin-top: 20px; /* Espaço entre a frase e os inputs */
-    width: 100%; /* Ocupa a largura total disponível na coluna */
-    max-width: 400px; /* Define uma largura máxima para os inputs */
-    align-items: center; /* Centraliza os inputs dentro do .input-group */
- border: 5px solid #f58ef5 ; /* Borda sutil na cor lilás claro */
- height: 60px;
- border-radius: 3px;
+
+/* ===== CARD E CONTATO ===== */
+.card,
+.container-branco {
+  background-color: #fff;
+  border-radius: 30px;
+  max-width: 1000px;
+  width: 90%;
+  padding: 40px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-.mensagem{
-   flex-direction: column; /* Inputs um embaixo do outro */
-    gap: 15px; /* Espaço entre os inputs (15 pixels) */
-    margin-top: 20px; /* Espaço entre a frase e os inputs */
-    width: 100%; /* Ocupa a largura total disponível na coluna */
-    max-width: 700px; /* Define uma largura máxima para os inputs */
-    align-items: center; /* Centraliza os inputs dentro do .input-group */
-    border: 5px solid #f58ef5 ; 
-    border-radius: 3px;
-    min-height: 60px;
+
+.conteudo-contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
 }
-button{
-    width: 145px;
-    /* Adiciona padding interno para altura */
-    padding: 10px 20px;
-    /* Cor de fundo com o tom de roxo/lilás do seu design */
-    background-color: #dc71dc; /* Roxo mais vibrante */
-    /* Cor do texto do botão */
-    
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
 }
-.enviar{
-    display: flex;
-    align-items: center;
+
+.email,
+.telefone,
+.mensagem {
+  border: 3px solid #f58ef5;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+}
+
+.mensagem {
+  min-height: 80px;
+}
+
+button {
+  width: 150px;
+  padding: 10px 20px;
+  background-color: #dc71dc;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #c25ec2;
+}
+
+.enviar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* ===== IMAGENS ===== */
+img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+
+/* Tablets e celulares grandes */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
     justify-content: center;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .lis {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  section {
+    padding: 100px 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .card,
+  .container-branco {
+    padding: 30px 20px;
+    margin: 50px auto;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .lis {
+    flex-direction: column;
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  section {
+    padding: 60px 10px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .card,
+  .container-branco {
+    width: 95%;
+    padding: 20px;
+    margin: 30px auto;
+  }
+
+  .inputs {
+    max-width: 100%;
+  }
+
+  .email,
+  .telefone,
+  .mensagem {
+    font-size: 14px;
+    border-width: 2px;
+  }
+
+  button {
+    width: 120px;
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
 

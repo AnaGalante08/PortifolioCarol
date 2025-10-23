@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,17 +7,17 @@
 body {
     opacity: 0.95;
     background: linear-gradient(180deg, #C256E1 0%, rgba(194, 86, 225, 0.87) 4.69%, #FFF 98.05%);
-    height: 100vh;
-    padding: 0;
+    min-height: 100vh;
     margin: 0 auto;
+    font-family: "Inknut Antiqua", serif;
 }
 
+/* ===== HEADER ===== */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     width: 100%;
     height: 100px;
     padding: 20px 100px;
@@ -29,24 +29,13 @@ header .logo {
 }
 
 header .logo img {
-    height: 100px;
+    height: 80px;
 }
 
-.Conteudo-principal {
-    width: 293px;
-    height: 287px;
-    flex-shrink: 0;
-    border-radius: 293px;
-    border: 0 solid #5516A4;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
-}
-
+/* ===== MENU ===== */
 .lis {
-
     display: flex;
-
     align-items: center;
-    /* Alinha os itens verticalmente ao centro */
     justify-content: right;
     gap: 30px;
     list-style-type: none;
@@ -57,40 +46,49 @@ header .logo img {
     font-size: 25px;
 }
 
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.Conteudo-principal {
+    width: 293px;
+    height: 287px;
+    flex-shrink: 0;
+    border-radius: 293px;
+    border: 0 solid #5516A4;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
 h1 {
     display: flex;
-    font-family: Baskervville;
+    font-family: "Baskervville", serif;
     font-size: 45px;
     font-weight: 400;
     background: linear-gradient(90deg, #D566ED 10.1%, #999090 34.13%, #BC5FDE 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
-
-
 
 .foto {
     width: 30%;
 }
 
 p {
-
-    color: #FFF;
-    font-family: "Inknut Antiqua";
+    color: #fff;
     font-size: 24px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     width: 40%;
 }
 
+/* ===== SEÇÃO TEMA ===== */
 .tema {
     padding-top: 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
+
+/* ===== SEÇÃO PROJETOS ===== */
 #projetos {
     max-width: 1200px;
     margin: 50px auto;
@@ -98,7 +96,7 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    align-items: stretch; /* novo */
+    align-items: stretch;
 }
 
 .projeto {
@@ -111,8 +109,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%; /* novo */
 }
+
 .projeto:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(194, 86, 225, 0.6);
@@ -121,10 +119,7 @@ p {
 .projeto h2 {
     font-size: 22px;
     margin-bottom: 12px;
-    color: #7E57C2; /* roxo médio */
-    background: none; /* removi o gradiente pra deixar cor sólida */
-    -webkit-background-clip: unset;
-    -webkit-text-fill-color: unset;
+    color: #7E57C2;
     font-weight: 700;
 }
 
@@ -132,13 +127,13 @@ p {
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.4;
-    color: #6A4B9C; /* roxo suave */
+    color: #6A4B9C;
 }
 
 .projeto a {
     align-self: flex-start;
     text-decoration: none;
-    color: #8E66CC; /* roxo claro */
+    color: #8E66CC;
     font-weight: 600;
     border: 2px solid #8E66CC;
     padding: 8px 15px;
@@ -151,12 +146,83 @@ p {
     color: #fff;
 }
 
-/* Responsividade para telas pequenas */
+/* ====== RESPONSIVIDADE ====== */
+
+/* Telas até 1024px (tablets e notebooks pequenos) */
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .foto {
+        width: 40%;
+    }
+
+    p {
+        width: 60%;
+        font-size: 20px;
+    }
+}
+
+/* Telas até 768px (tablets e celulares grandes) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .lis {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .tema {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    p {
+        width: 80%;
+    }
+
+    .foto {
+        width: 60%;
+    }
+
+    /* 🔹 Aqui os projetos passam a ficar um embaixo do outro */
+    #projetos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .projeto {
+        width: 90%;
+        max-width: 500px;
+    }
+}
+
+/* Telas até 480px (celulares pequenos) */
 @media (max-width: 480px) {
     header {
         flex-direction: column;
         height: auto;
         padding: 15px 20px;
+    }
+
+    header .logo img {
+        height: 60px;
     }
 
     .lis {
@@ -166,16 +232,43 @@ p {
         margin-top: 10px;
     }
 
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    p {
+        width: 90%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .foto {
+        width: 80%;
+    }
+
+    /* 🔹 Mantém os projetos empilhados também em celulares */
     #projetos {
-        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 20px;
     }
 
+    .projeto {
+        width: 95%;
+    }
+
     .projeto h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .projeto p {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    .projeto a {
+        font-size: 14px;
+        padding: 6px 12px;
     }
 }
